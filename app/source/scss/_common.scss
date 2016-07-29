@@ -1,0 +1,47 @@
+#container {
+	width: $content-width;
+	margin: 0 auto;
+}
+
+header {
+	position: relative;
+	padding: 26px 0;
+	h1 {
+		img {
+			width: 200px;
+			height: auto;
+		}
+	}
+	nav {
+		position: absolute;
+		top: 50px;
+		right: 0;
+		li {
+			display: inline-block;
+			padding: 0 0 0 20px;
+			font-size: 0.9em;
+			letter-spacing: 0.08em;
+		}
+		li + li {
+			margin: 0 0 0 16px;
+			border-left: 1px solid;
+		}
+	}
+}
+
+#contents {
+	.work-list {
+		margin: 10px 0 0;
+		font-size: 0.80em;
+		letter-spacing: 0.08em;
+		li {
+			display: inline-block;
+			width: 252px;
+			margin: 0 0 10px 0;
+			color: rgb(153,153,153);
+			a {
+				color: rgb(153,153,153);
+			}
+		}
+	}
+}
