@@ -9,8 +9,8 @@
 			<h1><img src="./images/common/logo.png" alt="GLYPH"></h1>
 			<nav>
 				<ul>
-					<li><a href="">portfolio</a></li>
-					<li><a href="">about</a></li>
+					<li><a href="index.html">portfolio</a></li>
+					<li><a href="about.html">about</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -20,6 +20,18 @@
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
 						<img src="./images/slide/01.png" alt="">
+						<h2 class="swiper-ttl" data-swiper-parallax="-100">GLYPHs</h2>
+						<p class="swiper-name" data-swiper-parallax="-100">－ All members</p>
+						<p class="swiper-comment" data-swiper-parallax="-300">GLYPHのメンバーが「芸工」をテーマにフォント制作を行いました。<br>
+							アルファベットの持つ意味や形状と、「芸工」の共通点を探り制作に取り入れることで賑やかなフォントが出来上がりました。</p>
+					</div>
+
+					<div class="swiper-slide">
+						<img src="./images/slide/02.png" alt="">
+						<h2 class="swiper-ttl" data-swiper-parallax="-100">GLYPHs</h2>
+						<p class="swiper-name" data-swiper-parallax="-100">－ All members</p>
+						<p class="swiper-comment" data-swiper-parallax="-300">GLYPHのメンバーが「芸工」をテーマにフォント制作を行いました。<br>
+							アルファベットの持つ意味や形状と、「芸工」の共通点を探り制作に取り入れることで賑やかなフォントが出来上がりました。</p>
 					</div>
 
 					<div class="swiper-slide">
@@ -27,36 +39,66 @@
 					</div>
 
 					<div class="swiper-slide">
-						<!-- Slide-03 コンテンツを挿入する -->
+						<img src="./images/slide/01.png" alt="">
 					</div>
+
+					<div class="swiper-slide">
+						<img src="./images/slide/01.png" alt="">
+					</div>
+
+					<div class="swiper-slide">
+						<img src="./images/slide/01.png" alt="">
+					</div>
+
+					<div class="swiper-slide">
+						<img src="./images/slide/01.png" alt="">
+					</div>
+
+					<div class="swiper-slide">
+						<img src="./images/slide/01.png" alt="">
+					</div>
+
 				</div>
-				<div class="swiper-pagination"></div>
 				<div class="swiper-button-prev"></div>
 				<div class="swiper-button-next"></div>
-				<div class="swiper-scrollbar"></div>
+				<div class="swiper-pagination"></div>
 			</div>
 			<!-- Swiper end -->
-			<ol class="work-list">
+<!-- 			<ol class="work-list">
 				<li><a href="">01 GLYPHs - All members</a></li>
-				<li><a href="">title - Name Name</a></li>
-				<li><a href="">title - Name Name</a></li>
-				<li><a href="">title - Name Name</a></li>
-				<li><a href="">title - Name Name</a></li>
-				<li><a href="">title - Name Name</a></li>
-				<li><a href="">title - Name Name</a></li>
-				<li><a href="">title - Name Name</a></li>
-				<li><a href="">title - Name Name</a></li>
-				<li><a href="">title - Name Name</a></li>
-				<li><a href="">title - Name Name</a></li>
-				<li><a href="">title - Name Name</a></li>
-				<li><a href="">title - Name Name</a></li>
-				<li><a href="">title - Name Name</a></li>
-				<li><a href="">title - Name Name</a></li>
-				<li><a href="">title - Name Name</a></li>
-			</ol>
+				<li><a href="">02 title - Kazuho Endo</a></li>
+				<li><a href="">03 title - Sayuri Ohashi</a></li>
+				<li><a href="">04 title - Azusa Oba</a></li>
+				<li><a href="">05 title - Satoko Yamakawa</a></li>
+				<li><a href="">06 title - Takahiro Nagayoshi</a></li>
+				<li><a href="">07 title - Mana Takaishi</a></li>
+				<li><a href="">08 title - Suzuka Tomiishi</a></li>
+				<li><a href="">09 title - Seika Yoneyama</a></li>
+				<li><a href="">10 title - Hinae Usami</a></li>
+				<li><a href="">11 title - Seiya Mishima</a></li>
+				<li><a href="">12 title - Kanon Okayama</a></li>
+				<li><a href="">13 title - Tomoko Shirai</a></li>
+				<li><a href="">14 title - Mei Kawashima</a></li>
+				<li><a href="">15 title - Fumine Sugiura</a></li>
+				<li><a href="">16 title - Name Name</a></li>
+			</ol> -->
 		</section>
 		<footer>
 		</footer>
 	</section>
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			pagination: '.swiper-pagination',
+			paginationClickable: true,
+			nextButton: '.swiper-button-next',
+			prevButton: '.swiper-button-prev',
+			effect: 'fade',
+			parallax: true,
+			speed: 600,
+			paginationBulletRender: function (index, className) {
+		　　return '<span class="' + className + '">' + ["01 GLYPHs - All members","02 title - Kazuho Endo","03 title - Sayuri Ohashi","04 title - Azusa Oba","05 title - Satoko Yamakawa","06 title - Takahiro Nagayoshi","07 title - Mana Takaishi","08 title - Suzuka Tomiishi"][index] + '</span>';
+		　}
+		});
+	</script>
 </body>
 </html>

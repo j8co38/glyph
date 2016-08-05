@@ -8,7 +8,7 @@ header {
 	padding: 26px 0;
 	h1 {
 		img {
-			width: 200px;
+			width: 180px;
 			height: auto;
 		}
 	}
@@ -19,7 +19,7 @@ header {
 		li {
 			display: inline-block;
 			padding: 0 0 0 20px;
-			font-size: 0.9em;
+			font-size: 0.85em;
 			letter-spacing: 0.08em;
 		}
 		li + li {
@@ -30,18 +30,51 @@ header {
 }
 
 #contents {
-	.work-list {
-		margin: 10px 0 0;
-		font-size: 0.80em;
-		letter-spacing: 0.08em;
-		li {
-			display: inline-block;
-			width: 252px;
-			margin: 0 0 10px 0;
-			color: rgb(153,153,153);
-			a {
-				color: rgb(153,153,153);
-			}
+	.swiper-slide {
+		position: relative;
+		.swiper-ttl {
+			position: absolute;
+			top: 32%;
+			left: 40px;
+			color: #000;
+			font-size: 2.1em;
+			font-weight: bold;
+			letter-spacing: 0.1em;
+		}
+		.swiper-name {
+			position: absolute;
+			top: 40%;
+			left: 40px;
+			color: #000;
+			font-size: 0.9em;
+		}
+		.swiper-comment {
+			position: absolute;
+			left: 40px;
+			bottom: 50px;
+			width: 280px;
+			color: #000;
+			font-size: 0.8em;
+			line-height: 1.6em;
+			letter-spacing: 0.1em;
 		}
 	}
+	.swiper-pagination {
+		font-size: 0.88em;
+		letter-spacing: 0.1em;
+	}
+	// .work-list {
+	// 	margin: 10px 0 0;
+	// 	font-size: 0.80em;
+	// 	letter-spacing: 0.08em;
+	// 	li {
+	// 		display: inline-block;
+	// 		width: 252px;
+	// 		margin: 0 0 10px 0;
+	// 		color: rgb(153,153,153);
+	// 		a {
+	// 			color: rgb(153,153,153);
+	// 		}
+	// 	}
+	// }
 }
