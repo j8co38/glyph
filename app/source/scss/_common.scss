@@ -1,6 +1,24 @@
+#svg-anime-wrap {
+	width: 100%;
+	height: 100%;
+	#svg-anime {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin: -39px 0 0 -162px;
+		z-index: 10;
+		img {
+			width: 60%;
+		}
+	}
+}
+
 #container {
+	position: relative;
 	width: $content-width;
+	min-height: 100%;
 	margin: 0 auto;
+	padding-bottom: 100px;
 }
 
 header {
@@ -21,6 +39,9 @@ header {
 			padding: 0 0 0 20px;
 			font-size: 0.85em;
 			letter-spacing: 0.08em;
+			a:active {
+				font-weight: bold;
+			}
 		}
 		li + li {
 			margin: 0 0 0 16px;
@@ -29,23 +50,28 @@ header {
 	}
 }
 
+//--------index / portfolio----------
+
 #contents {
+	.swiper-wrapper {
+		box-shadow: 0px 12px 10px -8px rgba(0,0,0,0.15);
+	}
 	.swiper-slide {
 		position: relative;
+		height: 440px;
+		color: #000;
+		letter-spacing: 0.1em;
 		.swiper-ttl {
 			position: absolute;
 			top: 32%;
 			left: 40px;
-			color: #000;
 			font-size: 2.1em;
 			font-weight: bold;
-			letter-spacing: 0.1em;
 		}
 		.swiper-name {
 			position: absolute;
 			top: 40%;
 			left: 40px;
-			color: #000;
 			font-size: 0.9em;
 		}
 		.swiper-comment {
@@ -53,28 +79,80 @@ header {
 			left: 40px;
 			bottom: 50px;
 			width: 280px;
-			color: #000;
-			font-size: 0.8em;
+			font-size: 0.85em;
 			line-height: 1.6em;
-			letter-spacing: 0.1em;
 		}
 	}
 	.swiper-pagination {
-		font-size: 0.88em;
-		letter-spacing: 0.1em;
+		font-size: 0.89em;
+		line-height: 1.2em;
+		letter-spacing: 0.08em;
 	}
-	// .work-list {
-	// 	margin: 10px 0 0;
-	// 	font-size: 0.80em;
-	// 	letter-spacing: 0.08em;
-	// 	li {
-	// 		display: inline-block;
-	// 		width: 252px;
-	// 		margin: 0 0 10px 0;
-	// 		color: rgb(153,153,153);
-	// 		a {
-	// 			color: rgb(153,153,153);
-	// 		}
-	// 	}
-	// }
+}
+
+//------------- about --------------
+
+#contents {
+	.about-takuten,
+	.about-glyph {
+		margin: 0 0 20px 0;
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	.about-glyph .h2-about {
+		background-color: #fafafa;
+	}
+	.h2-about {
+		float: left;
+		width: 32%;
+		height: 200px;
+		font-size: 2.4em;
+		font-weight: bold;
+		letter-spacing: 0.15em;
+	}
+	.about-txt {
+		float: left;
+		margin: 20px 0 0 35px;
+		font-size: 0.9em;
+		letter-spacing: 0.1em;
+		line-height: 2em;
+	}
+	.link-list {
+		margin: 40px 0 0;
+		.link {
+			float: left;
+			width: 32%;
+			height: 110px;
+			background-color: #ddd;
+			margin: 0 2% 0 0;
+			&:nth-child(3) {
+				margin: 0;
+			}
+			img {
+				width: 100%;
+				height: auto;
+				filter: grayscale(100%);
+				transition: .3s ease-in-out;
+				&:hover {
+					cursor: pointer;
+					filter: grayscale(0);
+				}
+			}
+		}
+	}
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	.copy {
+		text-align: center;
+		font-size: 0.9em;
+		line-height: 100px;
+		letter-spacing: 0.08em;
+	}
 }

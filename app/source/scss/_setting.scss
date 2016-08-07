@@ -3,11 +3,31 @@ $font-smoothing: antialiased;
 //auto,optimizeSpeed,optimizeLegibility,geometricPrecision
 $text-rendering: auto;
 $base-font-size: 15px;
-$base-font-family: 'Questrial', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', sans-serif;
+$base-font-family: 'Questrial', 'NotoSansCJKjp','ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', sans-serif;
 $base-font-color: #555;
 $base-background-color: #fff;
 
 $content-width: 1024px;
+
+//フォント
+
+@font-face {
+	font-family: "NotoSansCJKjp";
+	font-style: normal;
+	font-weight: 400;
+	src: url('./fonts/notosans-regular.eot');
+	src: local('Noto Sans CJK JP Regular'),
+		url('../fonts/notosans-regular.woff') format('woff'),
+}
+
+@font-face {
+	font-family: "NotoSansCJKjp";
+	font-style: normal;
+	font-weight: 700;
+	src: url('./fonts/notosans-bold.eot');
+	src: local('Noto Sans CJK JP Bold'),
+		url('../fonts/notosans-bold.woff') format('woff'),
+}
 
 //メディアクエリ
 @mixin media($media-width) {

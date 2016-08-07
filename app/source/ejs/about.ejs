@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+	<% include _head %>
+</head>
+<body>
+	<section id="container">
+		<header>
+			<h1><img src="./images/common/logo.png" alt="GLYPH"></h1>
+			<nav>
+				<ul>
+					<li><a href="index.html" class="animsition-link">portfolio</a></li>
+					<li><a href="about.html" class="animsition-link">about</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section id="contents" class="animsition" data-animsition-in-class="fade-in-up-sm" data-animsition-in-duration="1000" data-animsition-out-class="fade-out-up-sm" data-animsition-out-duration="800">
+			<section class="about-takuten clearfix">
+				<h2 class="h2-about"><img src="./images/about/takuten.png" alt="卓展とは"></h2>
+				<p class="about-txt">「卓展」とは、名古屋市立大学芸術工学部の学生による作品展示会です。<br>
+					プロジェクトに賛同した人々が卓を囲むように集まることから「卓展」となりました。<br>
+					学部４年生をリーダーとして多種多様なジャンルのプロジェクトを立ち上げ、<br>
+					学科・学年の垣根を越えて制作を行います。</p>
+				<p class="about-txt">2016年度は12の卓が開かれました。</p>
+			</section>
+			<section class="about-glyph clearfix">
+				<h2 class="h2-about"><img src="./images/about/glyph.png" alt="GLYPHとは"></h2>
+				<p class="about-txt">GLYPHは、文字に関連した作品を作る卓です。<br>
+					タイポグラフィやフォント制作など文字に関することを学び、<br>
+					文字で「遊ぶ」・「楽しむ」ことを大切に自由に作品制作を行いました。</p>
+				<p class="about-txt">制作した作品をより多くの人に見ていただくために、WEBサイトを開設しました。<br>
+					ぜひご覧ください。</p>
+			</section>
+			<section class="link-list clearfix">
+				<div class="link"><a href="http://taku-ten.com" target="_blank"><img src="./images/about/web.png" alt="卓展WEBサイト"></a></div>
+				<div class="link"><a href="https://twitter.com/takuten_geikou" target="_blank"><img src="./images/about/tw.png" alt="卓展Twitter"></a></div>
+				<div class="link"><a href="https://www.facebook.com/geikou.takuten/?fref=ts" target="_blank"><img src="./images/about/fb.png" alt="卓展Facebook"></a></div>
+			</section>
+		</section>
+		<footer>
+			<p class="copy">&copy; 2016 GLYPH</p>
+		</footer>
+	</section>
+	<script>
+		$(document).ready(function() {
+		  $(".animsition").animsition({
+		    inClass: 'fade-in-up-sm',
+		    outClass: 'fade-out-up-sm',
+		    inDuration: 1500,
+		    outDuration: 800,
+		    linkElement: '.animsition-link',
+		    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+		    loading: true,
+		    loadingParentElement: 'body', //animsition wrapper element
+		    loadingClass: 'animsition-loading',
+		    loadingInner: '', // e.g '<img src="loading.svg" />'
+		    timeout: false,
+		    timeoutCountdown: 5000,
+		    onLoadEvent: true,
+		    browser: [ 'animation-duration', '-webkit-animation-duration'],
+		    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+		    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+		    overlay : false,
+		    overlayClass : 'animsition-overlay-slide',
+		    overlayParentElement : 'body',
+		    transition: function(url){ window.location.href = url; }
+		  });
+		});
+	</script>
+</body>
+</html>

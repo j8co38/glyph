@@ -4,17 +4,22 @@
 	<% include _head %>
 </head>
 <body>
+	<div id="svg-anime-wrap">
+		<div id="svg-anime">
+			<img src="./images/common/logo.svg">
+		</div>
+	</div>
 	<section id="container">
 		<header>
 			<h1><img src="./images/common/logo.png" alt="GLYPH"></h1>
 			<nav>
 				<ul>
-					<li><a href="index.html">portfolio</a></li>
-					<li><a href="about.html">about</a></li>
+					<li><a href="index.html" class="animsition-link">portfolio</a></li>
+					<li><a href="about.html" class="animsition-link">about</a></li>
 				</ul>
 			</nav>
 		</header>
-		<section id="contents">
+		<section id="contents" class="animsition" data-animsition-in-class="fade-in-up-sm" data-animsition-in-duration="1000" data-animsition-out-class="fade-out-up-sm" data-animsition-out-duration="800">
 			<!-- Swiper -->
 			<div class="swiper-container">
 				<div class="swiper-wrapper">
@@ -58,32 +63,47 @@
 						<img src="./images/slide/01.png" alt="">
 					</div>
 
+					<div class="swiper-slide">
+						<img src="./images/slide/01.png" alt="">
+					</div>
+
+					<div class="swiper-slide">
+						<img src="./images/slide/01.png" alt="">
+					</div>
+
+					<div class="swiper-slide">
+						<img src="./images/slide/01.png" alt="">
+					</div>
+
+					<div class="swiper-slide">
+						<img src="./images/slide/01.png" alt="">
+					</div>
+
+					<div class="swiper-slide">
+						<img src="./images/slide/01.png" alt="">
+					</div>
+
+					<div class="swiper-slide">
+						<img src="./images/slide/01.png" alt="">
+					</div>
+
+					<div class="swiper-slide">
+						<img src="./images/slide/01.png" alt="">
+					</div>
+
+					<div class="swiper-slide">
+						<img src="./images/slide/01.png" alt="">
+					</div>
+
 				</div>
 				<div class="swiper-button-prev"></div>
 				<div class="swiper-button-next"></div>
 				<div class="swiper-pagination"></div>
 			</div>
 			<!-- Swiper end -->
-<!-- 			<ol class="work-list">
-				<li><a href="">01 GLYPHs - All members</a></li>
-				<li><a href="">02 title - Kazuho Endo</a></li>
-				<li><a href="">03 title - Sayuri Ohashi</a></li>
-				<li><a href="">04 title - Azusa Oba</a></li>
-				<li><a href="">05 title - Satoko Yamakawa</a></li>
-				<li><a href="">06 title - Takahiro Nagayoshi</a></li>
-				<li><a href="">07 title - Mana Takaishi</a></li>
-				<li><a href="">08 title - Suzuka Tomiishi</a></li>
-				<li><a href="">09 title - Seika Yoneyama</a></li>
-				<li><a href="">10 title - Hinae Usami</a></li>
-				<li><a href="">11 title - Seiya Mishima</a></li>
-				<li><a href="">12 title - Kanon Okayama</a></li>
-				<li><a href="">13 title - Tomoko Shirai</a></li>
-				<li><a href="">14 title - Mei Kawashima</a></li>
-				<li><a href="">15 title - Fumine Sugiura</a></li>
-				<li><a href="">16 title - Name Name</a></li>
-			</ol> -->
 		</section>
 		<footer>
+			<p class="copy">&copy; 2016 GLYPH</p>
 		</footer>
 	</section>
 	<script>
@@ -96,8 +116,33 @@
 			parallax: true,
 			speed: 600,
 			paginationBulletRender: function (index, className) {
-		　　return '<span class="' + className + '">' + ["01 GLYPHs - All members","02 title - Kazuho Endo","03 title - Sayuri Ohashi","04 title - Azusa Oba","05 title - Satoko Yamakawa","06 title - Takahiro Nagayoshi","07 title - Mana Takaishi","08 title - Suzuka Tomiishi"][index] + '</span>';
+		　　return '<span class="' + className + '">' + ["01 GLYPHs - All members","02 title - Kazuho Endo","03 title - Sayuri Ohashi","04 title - Azusa Oba","05 title - Satoko Yamakawa","06 title - Takahiro Nagayoshi","07 title - Mana Takaishi","08 title - Suzuka Tomiishi","09 title - Seika Yoneyama","10 title - Hinae Usami","11 title - Seiya Mishima","12 title - Kanon Okayama","13 title - Tomoko Shirai","14 title - Mei Kawashima","15 title - Fumine Sugiura","16 title - Name Name"][index] + '</span>';
 		　}
+		});
+		$(document).ready(function() {
+			//------------------animsition----------------------
+			$(".animsition").animsition({
+				inClass: 'fade-in-up-sm',
+				outClass: 'fade-out-up-sm',
+				inDuration: 1500,
+				outDuration: 800,
+				linkElement: '.animsition-link',
+				// e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+				loading: true,
+				loadingParentElement: 'body', //animsition wrapper element
+				loadingClass: 'animsition-loading',
+				loadingInner: '', // e.g '<img src="loading.svg" />'
+				timeout: false,
+				timeoutCountdown: 5000,
+				onLoadEvent: true,
+				browser: [ 'animation-duration', '-webkit-animation-duration'],
+				// "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+				// The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+				overlay : false,
+				overlayClass : 'animsition-overlay-slide',
+				overlayParentElement : 'body',
+				transition: function(url){ window.location.href = url; }
+			});
 		});
 	</script>
 </body>
