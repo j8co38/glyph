@@ -14,6 +14,7 @@
 }
 
 #container {
+	display: none;
 	position: relative;
 	width: $content-width;
 	min-height: 100%;
@@ -68,15 +69,36 @@ header {
 			font-size: 2.1em;
 			font-weight: bold;
 		}
+		.swiper-ttl-right {
+			position: absolute;
+			top: 32%;
+			right: 40px;
+			font-size: 2.1em;
+			font-weight: bold;
+		}
 		.swiper-name {
 			position: absolute;
 			top: 40%;
 			left: 40px;
 			font-size: 0.9em;
 		}
+		.swiper-name-right {
+			position: absolute;
+			top: 40%;
+			right: 40px;
+			font-size: 0.9em;
+		}
 		.swiper-comment {
 			position: absolute;
 			left: 40px;
+			bottom: 50px;
+			width: 280px;
+			font-size: 0.85em;
+			line-height: 1.6em;
+		}
+		.swiper-comment-right {
+			position: absolute;
+			right: 40px;
 			bottom: 50px;
 			width: 280px;
 			font-size: 0.85em;
