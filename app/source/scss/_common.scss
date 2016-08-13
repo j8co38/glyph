@@ -1,3 +1,5 @@
+//-------------- svg-anime ---------------
+
 #svg-anime-wrap {
 	width: 100%;
 	height: 100%;
@@ -12,6 +14,15 @@
 		}
 	}
 }
+
+//FireFox対応
+@-moz-document url-prefix() {
+	#svg-anime {
+		background: url('../images/common/logo_ff.png') no-repeat;
+	}
+}
+
+//-------------- svg-end ---------------
 
 #container {
 	position: relative;
@@ -50,7 +61,7 @@ header {
 	}
 }
 
-//--------index / portfolio----------
+//--------- portfolio ----------
 
 #contents {
 	.swiper-wrapper {
