@@ -54,7 +54,7 @@ gulp.task('cmq', function() {
 ****************************** */
 var ejs = require('gulp-ejs');
 gulp.task('ejs', function() {
-	gulp.src(['./app/source/ejs/**/*.ejs','!./app/source/ejs/**/_*.ejs'])
+	gulp.src(['./app/source/ejs/**/*.ejs','!./app/source/ejs/**/_*.ejs'],{base: './app/source/ejs'})
 		.pipe(plumber())
 		.pipe(ejs())
 		.pipe(gulp.dest('./app/public'))
