@@ -67,6 +67,9 @@ header {
 	.swiper-wrapper {
 		box-shadow: 0px 12px 10px -8px rgba(0,0,0,0.15);
 	}
+	#slide-02, #slide-05 {
+		color: #fff;
+	}
 	.swiper-slide {
 		position: relative;
 		height: 440px;
@@ -97,6 +100,9 @@ header {
 			top: 40%;
 			right: 40px;
 			font-size: 0.9em;
+		}
+		.swiper-name-low {
+			top: 48% !important;
 		}
 		.swiper-comment {
 			position: absolute;
