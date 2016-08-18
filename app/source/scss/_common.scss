@@ -70,6 +70,14 @@ header {
 	#slide-02, #slide-03, #slide-05 {
 		color: #fff;
 	}
+	#slide-05 {
+		.swiper-ttl-img {
+			top: 20%;
+		}
+		.swiper-name {
+			top: 34%;
+		}
+	}
 	.swiper-slide {
 		position: relative;
 		height: 440px;
@@ -85,7 +93,7 @@ header {
 		.swiper-ttl-right {
 			position: absolute;
 			top: 32%;
-			right: 40px;
+			right: 50px;
 			font-size: 2.1em;
 			font-weight: bold;
 		}
@@ -98,7 +106,7 @@ header {
 		.swiper-name-right {
 			position: absolute;
 			top: 40%;
-			right: 40px;
+			right: 50px;
 			font-size: 0.9em;
 		}
 		.swiper-name-low {
@@ -114,7 +122,7 @@ header {
 		}
 		.swiper-comment-right {
 			position: absolute;
-			right: 40px;
+			right: 50px;
 			bottom: 50px;
 			width: 280px;
 			font-size: 0.85em;
@@ -125,6 +133,18 @@ header {
 		font-size: 0.88em;
 		line-height: 1.3em;
 		letter-spacing: 0.08em;
+	}
+	.link-btn {
+		position: absolute;
+		top: 41%;
+		left: 40px;
+		background-color: #fff;
+		font-weight: bold;
+		font-size: 1em;
+		a {
+			display: block;
+			padding: 17px 26px;
+		}
 	}
 }
 
