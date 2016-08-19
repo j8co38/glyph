@@ -291,8 +291,11 @@ footer {
 			.swiper-ttl, .swiper-ttl-right {
 				font-size: 1.5em;
 			}
-			.link-btn {
+			.btn-black {
 				display: none;
+			}
+			.link-btn {
+				position: static;
 			}
 		}
 		.swiper-button-next, .swiper-button-prev {
