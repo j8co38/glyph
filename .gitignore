@@ -1,2 +1,4 @@
 node_modules/
 app/public
+*.mp4
+*.zip

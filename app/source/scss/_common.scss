@@ -78,6 +78,17 @@ header {
 			top: 34%;
 		}
 	}
+	#slide-03 {
+		background: #000;
+	}
+	#slide-07, #slide-09 {
+		background: #fff;
+	}
+	video {
+		position: absolute;
+		top: 20px;
+		right: 0;
+	}
 	.swiper-slide {
 		position: relative;
 		height: 440px;
@@ -144,6 +155,13 @@ header {
 		a {
 			display: block;
 			padding: 17px 26px;
+		}
+	}
+	.btn-black {
+		top: 48%;
+		background-color: #000;
+		a {
+			color: #fff;
 		}
 	}
 }
